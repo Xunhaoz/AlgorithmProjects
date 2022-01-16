@@ -1,0 +1,65 @@
+1. 459 Graph Connectivity
+2. 10137 The Trip
+3. 10038 Jolly Jumpers
+4. 10324 Zeros and Ones
+5. 10050 Hartals
+1. 10191 Longest Nap
+2. 10152 ShellSort
+3. 10138 CDVII
+4. 10044 Erdos Number
+5. 10194 Football (aka Soccer)
+1. 10252 Common Permutation
+2. 10132 File Fragmentation
+3. 10679 I Love Strings!!!
+4. 10298 Power Strings
+5. 10234 Frequent Substrings
+1. 701 The Archeologist's Dilemma
+2. 10023 Square root
+3. 10127 Ones
+4. 11264 Coin Collector
+5. 10165 Stone Game
+1. 233 Package Pricing
+1. 10664 Luggage
+3. 10261 Ferry Loading
+4. 10482 The Candyman Can
+5. 10032 Tug of War
+1. 10721 Bar Codes
+2. 10590 Boxes of Chocolates Again
+3. 10157 Expressions   
+4. 10128 Queue 
+5. 11038 How many 0's   
+1. 11064 Number Theory
+2. 10168 Summation of Four Primes 
+3. 294 Divisors
+4. 10225 Discrete Logging
+5. 10090 Marbles   
+1. 615 Is It A Tree?
+2. 10039 Railroads
+3. 10158 War G
+4. 10199 Tourist Guide G
+5. 10248 The Integer All-time Champ
+1. 10397 Connect the Campus
+2. 11183 Teen Girl Squad
+3. 10600 ACM contest and Blackout 
+4. 10842 Traffic Flow
+5. 10243 Fire! Fire!! Fire!!!
+1. 10003 Cutting Sticks
+2. 714 Copying Books
+3. 10271 Chopsticks
+4. 10069 Distinct Subsequences
+5. 10739 String to Palindrome
+1. 929 Number Maze
+2. 721 Invitation Cards
+3. 104 Arbitrage 
+4. 10278 Fire Station
+5. 10342 Always Late
+1. 10051 Tower of Cubes
+2. 12727 The Sightseeing Tour
+3. 10917 Walk Through the Forest
+4. 12051 Mazes in Higher Dimensions
+5. 10319 Manhattan
+1. 10002 Center of Masses
+2. 10514 River Crossing
+3. 10167 Birthday Cake
+4. 10136 Chocolate Chip Cookies
+5. 10135 Herding Frosh
