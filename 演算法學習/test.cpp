@@ -1,56 +1,50 @@
-#include<iostream>
-#include<ctime>
-#include<random>
-#include<iomanip>
+#include <iostream>
 using namespace std;
 
-struct linkedlist{
-    int val;
-    struct linkedlist *next;ik
-};
+const int N = 8;
+int arr[10], total_cnt;
+// arr記錄每一行(X)皇后的Y座標
 
-typedef linkedlist node;
-typedef node *link;
-node indexbox[7];
-int data[20] = {0, 1, 2, 3, 4, 5, 6};
-void addlink(int);
-
-int main(){
-    addlink(0);
-    addlink(1);
-    addlink(2);
-    addlink(3);
-    addlink(4);
-    addlink(5);
-    addlink(6);
-
-    for(int i=0;i<6;i++){
-        cout << i;
-        link head = new node;
-        *head = indexbox[i];
-        head = head->next;
-        cout << "[" << head->val << "]" << endl;
-
+bool isPlaceOK(int *a, int n, int c) {
+    for (int i = 1; i <= n - 1; ++i) {
+        if (a[i] == c || a[i] - i == c - n || a[i] + i == c + n)
+            return false;
+        //檢查位置是否可以放
+        //c是將要放置的位置
+        //a[i] == c如果放在同一列，false
+        //a[i] -+ i = c -+ n 如果在對角線上，false
     }
-
-    return 0;
+    return true;
 }
 
-void addlink(int i){
-    int pos = data[i]%7;
-
-    link head = new node;
-    link newnode = new node;
-
-    *head = indexbox[pos];
-
-    newnode->next = NULL;
-    newnode->val = data[i];
-
-    while(head->next != NULL){
-        head = head->next;
+void printSol(int *a) {
+    for (int i = 1; i <= N; ++i) { //遍歷每一行
+        for (int j = 1; j <= N; ++j) { //遍歷每一列
+            cout << (a[i] == j ? "X" : "-") << " ";;
+        } //如果標記數組中這一行的皇后放在j位置，則輸出X，否則輸出-，
+        //用空格分隔
+        cout << endl; //每一行輸出一個換行
     }
-    head->next = newnode;
-    head = head->next;
-    cout << head->val << " ";
+    cout << endl; //每一組數據一個換行分隔
+}
+
+void addQueen(int *a, int n) {
+    if (n > N) { //n代表從第一行開始放置
+        printSol(a);
+        total_cnt++;
+        return ;
+    }
+    for (int i = 1; i <= N; ++i) { //i從第1列到第N列遍歷
+        if (isPlaceOK(a, n, i)) {
+            a[n] = i; //如果可以放置，就把皇后放在第n行第i列
+            addQueen(a, n + 1);
+        }
+    }
+
+}
+
+int main() {
+    addQueen(arr, 1);
+    cout << "total: " << total_cnt << " solutions.\n";
+    return 0;
 }
